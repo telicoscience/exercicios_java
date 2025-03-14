@@ -1,0 +1,19 @@
+{
+    "configurations": [
+      {
+        "type": "java",
+        "request": "launch",
+        "name": "Launch Main",
+        "mainClass": "Main",
+        "showReturnValue": true,
+        "program": "${workspaceFolder}/${input:programName}.java"
+      }
+    ],
+    "inputs": [
+      {
+        "type": "promptString",
+        "id": "programName",
+        "description": "Nome do arquivo Java a ser depurado (sem extensão)"
+      }
+    ]
+  }
