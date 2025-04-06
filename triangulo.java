@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class triangulo {
     public static boolean isTriangulo(float a, float b, float c)
     {   
-        if( a > b + c && b > a + c && c > a + b){
+        if( a >= b + c || b >= a + c || c >= a + b){
             return false; 
         } else {
             return true; 
@@ -16,9 +16,9 @@ public class triangulo {
         float perimetro = a + b + c; 
         float area = (a + b) * c / 2;
         if (isTriangulo(a, b, c) == true){
-            System.out.printf("Perímetro: %.2f", perimetro);
+            System.out.println("Perímetro: "+ perimetro);
         } else {
-            System.out.printf("Área: %.2f", area);
+            System.out.printf("Área: "+ area);
 
 
         }
