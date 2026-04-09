@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class paresEntreCinco {
     
-    public static isPar(int a){
+    public static boolean isPar(int a){
         if (a % 2 == 0){
             return true; 
         } else {
@@ -21,8 +21,12 @@ public class paresEntreCinco {
         }
 
         for (i = 0; i < 5; i ++ ){
-           System.out.println(isPar(num[i]));
+          if (isPar(num[i])) {
+            contador = contador + 1; 
+          }
+          
         }
+        System.out.println(contador + " valores pares");
         scanner.close();
 
     }
