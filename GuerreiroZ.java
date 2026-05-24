@@ -25,6 +25,11 @@ public class GuerreiroZ {
         transformacao.apresentar();
     }
 
+    public void transformar() {
+        
+        System.out.println(nome + " se transformou em "+ transformacao.getNome());
+    }
+
     public static void main(String[] args) {
         Ki kiGoku = new Ki(9000);
         TecnicaEspecial kamehameha = 
@@ -34,6 +39,8 @@ public class GuerreiroZ {
         GuerreiroZ goku = 
             new GuerreiroZ("Goku", kiGoku, kamehameha, ssj);
         goku.apresentar();
+        goku.transformar();
+        
 
         
     }
